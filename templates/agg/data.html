@@ -1,0 +1,49 @@
+{% extends './base.html' %}
+
+{% block content %}
+<div class="container">
+    {% if errors %}
+    <div class="alert alert-danger" role="alert">
+        <strong>Error:</strong> <span>{{ errors }}</span> <a href="/index.html" class="alert-link"> Click here to return
+            to page !</a>
+    </div>
+    {% else %}
+
+    <div class="container">
+        <div class="card-header text-center ">
+            <h1>Your Dataset</h1>
+        </div>
+        <div class="card-body">
+            {{data|safe}}
+        </div>
+    </div>
+    {% endif %}
+    <div class="text-center">
+        <div class="card-header text-monospace">
+            <h3>Select columns to Clustering</h3>
+        </div>
+        <form id="form" action="dendrogram" method="POST">
+            <div class="card-body">
+                {%for i in range(0,m)%}
+                <input class="single-checkbox" type="checkbox" name="cot" id="check{{i}}" value={{i}}>
+                <label class="single-label" for="check{{i}}">Column {{i+1}}</label>
+                {%endfor%}
+            </div>
+            <div class="card-footer text-muted">
+                <input type="submit" class="btn btn-primary" value="Clustering">
+            </div>
+        </form>
+    </div>
+
+</div>
+<!-- Pagination -->
+<script>
+    $(document).ready(function () {
+        $('#myTable').DataTable();
+    });
+</script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="{{ url_for('static', filename='javascripts/custom.js') }}"></script>
+{% endblock %}

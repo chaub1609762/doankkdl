@@ -1,0 +1,61 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url("./bg.jpg") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 10% !important;
+    background-position: center;
+}
+
+.howdo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.start {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 50px;
+}
+
+
+/* .card {
+    position: relative;
+}
+
+.card .card-body {
+    position: absolute;
+} */
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 1s;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    width: 90% !important;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron {
+    background-image: url(./bg.jpg) !important;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.upload {
+    padding-left: 50px;
+    padding-top: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

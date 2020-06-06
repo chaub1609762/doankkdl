@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clustering your dataset</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='js/script.css')}}">
+    <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css '>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="" width="30" height="30" class="d-inline-block align-top" alt=""> Clustering
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">K-means</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">AggCluster</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div class=" jumbotron">
+        <h1 class="wow shake text-dark display-4 font-weight-normal">No-Code Machine Learning inside Sheets</h1>
+        <p class="wow shake text-dark lead ">Build, Train and Deploy AI models. Without writing a line of code.</p>
+
+    </div>
+    <div>
+        <div class="container ">
+            <h1 class="text-center "><br><br><b>Classification your data for 3 minutes</b></h1>
+            <h4 class="text-center "><br><br>You don't have the knowledge SVM. You want to categorize your data.</h4>
+            <h4 class="text-center "><br>I'm here to help you.</h4>
+
+            <div class="row ">
+                <div class="col-4 ">
+                    <div class=" card ">
+                        <div class=" card-body ">
+                            <p class="text-danger"><b>Tool</b></p>
+                            <p><i> <b>How to import and train your data</i></b>
+                            </p>
+                            <p>This tool help you Build, Train and Deploy AI models. Without writing a line of code.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class=" card ">
+                        <div class=" card-body ">
+                            <p class="text-success"><b>User</b></p>
+                            <p><i> <b>Why did i choose it?</i></b>
+                            </p>
+                            <p>This website is open source</p>
+                            <p>It's very advantage for data processing.</p>
+                            <p>Data include all files as excel, csv, sheet,...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class=" card  ">
+                        <div class=" card-body ">
+                            <p class="text-info"><b>Interface</b></p>
+                            <p><i><b>How to I can use?</i></b>
+                            </p>
+                            <p>Interface is friendly with user</p>
+                            <p>All tools are used very easy.</p>
+                            <p>You only need to have computer, internet, so you can use my web</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <hr>
+            <div class="howdo">
+                <p>How does it work?</p>
+            </div>
+            <hr>
+            <hr>
+            <div class="row" style="margin-top: 8rem !important;">
+                <div class="col-6">
+                    <div class="upload">
+                        <p style="font-weight: bold; font-size: 30px;">
+                            Select your model
+                        </p>
+                        <p>Choose from Regression, Classification, Forecasting or Text Analysis.</p>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <img src="{{ url_for('static', filename='img/select.png')}}" class="img-thumbnail " style="width: 400px; height: 300px;  " alt="Responsive image ">
+
+                </div>
+
+            </div>
+            <div class="row" style="margin-top: 8rem !important;">
+                <div class="col-6">
+                    <img src="{{ url_for('static', filename='img/loadfile.png')}}" class="img-thumbnail " style="width: 400px; height: 300px; ; " alt="Responsive image ">
+                </div>
+                <div class="col-6 ">
+                    <div class="upload">
+                        <p style="font-weight: bold; font-size: 30px;">
+                            Upload data to my web
+                        </p>
+                        <p>File Excel,Csv,Sheet,...</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" style="margin-top: 8rem !important;">
+                <div class="col-6">
+                    <div class="upload">
+                        <p style="font-weight: bold; font-size: 30px;">
+                            Check number of column and group.
+                        </p>
+                        <p>Choose number of column and group to train model</p>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <img src="{{ url_for('static', filename='img/column.png')}}" class="img-thumbnail " style="width: 400px; height: 300px; ; " alt="Responsive image ">
+
+                </div>
+
+            </div>
+            <div class="row" style="margin-top: 8rem !important;">
+                <div class="col-6">
+                    <img src="{{ url_for('static', filename='img/graph.jpg') }}" class="img-thumbnail " style="width: 400px; height: 300px;  " alt="Responsive image ">
+                </div>
+                <div class="col-6 ">
+                    <div class="upload">
+                        <p style="font-weight: bold; font-size: 30px;">
+                            Predict
+                        </p>
+                        <p>Test your trained Machine Learning model.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="start">
+            <p>Get start</p>
+        </div>
+        <div class="container">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <a href="kmeans" class="btn btn-primary float-right" role="button">With Kmeans</a>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+                        <a href="agg" class="btn btn-primary float-left" role="button">With Agg</a>
+                    </div>
+                </div>
+            </div>
+            <div class="start">
+                <p>Wait a muinute</p>
+                <p>Enjoy your result</p>
+            </div>
+        </div>
+
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+
+
+</html>

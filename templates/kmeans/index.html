@@ -1,0 +1,26 @@
+{% extends './base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="container">
+            <h1>Import Data</h1>
+            <h3>Upload a CSV file to import data</h3>
+        </div>
+        <form id="form" action="kmeans/data" method="POST" enctype="multipart/form-data">
+            <div class="card-body">
+                <div class='container'>
+                    <div class="upload-btn-wrapper">
+                        <button type="button" class="btn btn-outline-info btn-select">Select File</button>
+                        <input type="file" id="file" name="file">
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <input type="submit" class="btn btn-primary btn-md" value="Submit">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

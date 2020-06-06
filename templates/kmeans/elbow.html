@@ -1,0 +1,36 @@
+{% extends './base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <div class="card-header">
+            <h3>Recommend number of cluster</h3>
+        </div>
+        <div class="card-body">
+            <img src={{url1}} alt="ERROR" width="100%">
+        </div>
+    </div>
+
+    <div class="card text-center">
+        <div class="col-md-12">
+            <h3>Type number cluster </h3>
+        </div>
+        <form id="form" action="ketqua" method="POST">
+            <div class="card-body">
+                <p class="card-text">Type number of cluster or choose <span class="badge badge-primary">Continue Clustering</span> button!.</p>
+                <div class="col-md-12 mb-4">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend2" name="group">Number of cluster</span>
+                        </div>
+                        <input type="text" class="form-control" id="cluster" name="cluster" value="3" required>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-primary" value="Clustering">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
